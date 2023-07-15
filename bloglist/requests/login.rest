@@ -1,0 +1,19 @@
+###
+GET http://localhost:3003/api/users
+###
+POST http://localhost:3003/api/users HTTP/1.1
+content-type: application/json
+
+{
+    "username": "thunder",
+    "name": "Lukas Fischer",
+    "password": "fisch"
+}
+###
+POST http://localhost:3003/api/login HTTP/1.1
+content-type: application/json
+
+{
+    "username": "thunder",
+    "password": "fisch"
+}
